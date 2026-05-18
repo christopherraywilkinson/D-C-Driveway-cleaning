@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D & C Driveway Cleaning | Hahnville, Louisiana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #111111;
+      --blue: #333333;
+      --blue-mid: #444444;
+      --sky: #666666;
+      --accent: #ffffff;
+      --white: #ffffff;
+      --off-white: #f5f5f5;
+      --gray: #999999;
+      --light-gray: #e0e0e0;
+      --text: #1a1a1a;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%;
+      height: 68px;
+      background: rgba(10,22,40,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .nav-logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta {
+      background: var(--white);
+      color: #111111 !important;
+      padding: 0.45rem 1.2rem;
+      border-radius: 4px;
+      font-weight: 700 !important;
+      transition: background 0.2s, transform 0.15s !important;
+    }
+    .nav-cta:hover { background: #dddddd !important; transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--navy);
+      padding-top: 68px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 60% at 80% 40%, rgba(80,80,80,0.25) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 20% 80%, rgba(255,255,255,0.05) 0%, transparent 60%),
+        linear-gradient(160deg, #111111 0%, #1e1e1e 100%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image: linear-gradient(var(--sky) 1px, transparent 1px),
+        linear-gradient(90deg, var(--sky) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 1100px; margin: 0 auto;
+      padding: 6rem 5% 5rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #cccccc;
+      font-size: 0.78rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.4rem 1rem; border-radius: 50px;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.6s ease both;
+    }
+    .hero-badge::before { content: '●'; font-size: 0.5rem; }
+    .hero h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.05;
+      color: var(--white);
+      letter-spacing: 0.01em;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: #aaaaaa;
+    }
+    .hero-sub {
+      margin-top: 1.2rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.6);
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+    .hero-actions {
+      margin-top: 2.2rem;
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--white); color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1rem; letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem; border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+    }
+    .btn-primary:hover { background: #e0e0e0; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,255,255,0.25); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      border: 2px solid rgba(255,255,255,0.25); color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1rem; letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem; border-radius: 5px;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    }
+    .btn-secondary:hover { border-color: #aaaaaa; background: rgba(255,255,255,0.08); transform: translateY(-2px); }
+
+    /* Hero stats card */
+    .hero-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 2.5rem;
+      backdrop-filter: blur(10px);
+      animation: fadeUp 0.7s 0.2s ease both;
+    }
+    .hero-card-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: #cccccc;
+      margin-bottom: 1.5rem;
+    }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .stat {
+      text-align: center;
+      padding: 1.2rem;
+      background: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .stat-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.4rem; font-weight: 800;
+      color: var(--white); line-height: 1;
+    }
+    .stat-num span { color: #aaaaaa; }
+    .stat-label {
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--gray); margin-top: 0.4rem;
+    }
+    .hero-promise {
+      margin-top: 1.5rem;
+      display: flex; align-items: center; gap: 0.75rem;
+      padding: 1rem 1.2rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 10px;
+    }
+    .hero-promise-icon { font-size: 1.5rem; }
+    .hero-promise-text { font-size: 0.85rem; color: rgba(255,255,255,0.7); line-height: 1.5; }
+    .hero-promise-text strong { color: var(--white); }
+
+    /* ── SECTION BASE ── */
+    section { padding: 5rem 5%; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: #555555;
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800; line-height: 1.1;
+      color: var(--navy); letter-spacing: 0.01em;
+    }
+    .section-sub {
+      margin-top: 0.75rem;
+      font-size: 1rem; color: #5a6e84; line-height: 1.7;
+      max-width: 560px;
+    }
+
+    /* ── SERVICES ── */
+    .services { background: var(--off-white); }
+    .services-header { text-align: center; margin-bottom: 3.5rem; }
+    .services-header .section-sub { margin: 0.75rem auto 0; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .service-card {
+      background: var(--white);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(10,22,40,0.07);
+      transition: transform 0.25s, box-shadow 0.25s;
+      border: 1px solid var(--light-gray);
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(10,22,40,0.13); }
+    .service-img {
+      height: 200px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 5rem;
+      position: relative; overflow: hidden;
+    }
+    .service-img.driveway {
+      background: linear-gradient(135deg, #e4eaf3 0%, #c8d8ef 100%);
+    }
+    .service-img.deck {
+      background: linear-gradient(135deg, #e8f0e4 0%, #c8dfc2 100%);
+    }
+    .service-stripe {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #333, #888);
+    }
+    .service-body { padding: 1.8rem; }
+    .service-body h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.5rem; font-weight: 800;
+      color: var(--navy); letter-spacing: 0.02em;
+      margin-bottom: 0.6rem;
+    }
+    .service-body p { font-size: 0.93rem; color: #5a6e84; line-height: 1.65; }
+    .service-features { margin-top: 1.2rem; list-style: none; }
+    .service-features li {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.85rem; color: #4a6070; padding: 0.25rem 0;
+    }
+    .service-features li::before {
+      content: '✓';
+      width: 18px; height: 18px;
+      background: #333333; color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700; flex-shrink: 0;
+    }
+    .service-cta {
+      display: block; margin-top: 1.5rem;
+      text-align: center; padding: 0.75rem;
+      background: var(--navy); color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 0.95rem; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none;
+      border-radius: 7px;
+      transition: background 0.2s;
+    }
+    .service-cta:hover { background: var(--blue-mid); }
+
+    /* ── WHY US ── */
+    .why { background: var(--white); }
+    .why-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+    }
+    .why-features { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+    .why-feature {
+      display: flex; gap: 1.2rem; align-items: flex-start;
+      padding: 1.2rem;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .why-feature:hover {
+      border-color: var(--light-gray);
+      background: var(--off-white);
+    }
+    .why-icon {
+      width: 48px; height: 48px; flex-shrink: 0;
+      background: linear-gradient(135deg, #222, #555);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .why-feature h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 0.3rem;
+    }
+    .why-feature p { font-size: 0.88rem; color: #5a6e84; line-height: 1.6; }
+    .why-visual {
+      position: relative;
+      border-radius: 20px; overflow: hidden;
+    }
+    .why-visual-inner {
+      background: linear-gradient(145deg, #111111 0%, #2a2a2a 100%);
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+    }
+    .why-visual-icon { font-size: 5rem; margin-bottom: 1.5rem; display: block; }
+    .why-visual h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.8rem; font-weight: 800; color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .why-visual p { color: rgba(255,255,255,0.6); font-size: 0.9rem; line-height: 1.6; }
+    .why-visual-badge {
+      margin-top: 2rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      color: #cccccc;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1rem; font-weight: 700; letter-spacing: 0.05em;
+    }
+
+    /* ── PROCESS ── */
+    .process { background: var(--off-white); }
+    .process-header { text-align: center; margin-bottom: 3.5rem; }
+    .process-header .section-sub { margin: 0.75rem auto 0; }
+    .process-steps {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0; position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute; top: 36px; left: 10%; right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, #333, #888);
+      z-index: 0;
+    }
+    .process-step {
+      text-align: center; padding: 0 1.5rem 2rem;
+      position: relative; z-index: 1;
+    }
+    .step-num {
+      width: 72px; height: 72px; margin: 0 auto 1.5rem;
+      background: linear-gradient(135deg, #222, #555);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.6rem; font-weight: 800; color: var(--white);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      border: 4px solid var(--off-white);
+    }
+    .process-step h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.2rem; font-weight: 700; color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .process-step p { font-size: 0.87rem; color: #5a6e84; line-height: 1.6; }
+
+    /* ── CONTACT ── */
+    .contact { background: var(--navy); }
+    .contact-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;
+    }
+    .contact h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800;
+      color: var(--white); letter-spacing: 0.01em; line-height: 1.1;
+    }
+    .contact h2 em { font-style: normal; color: #aaaaaa; }
+    .contact-sub { margin-top: 0.75rem; color: rgba(255,255,255,0.55); font-size: 0.95rem; line-height: 1.7; }
+    .contact-methods { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.2rem; }
+    .contact-method {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1.1rem 1.4rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    }
+    .contact-method:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.3);
+      transform: translateX(4px);
+    }
+    .contact-method-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: linear-gradient(135deg, #333, #666);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+    }
+    .contact-method-info label {
+      display: block; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray);
+    }
+    .contact-method-info span {
+      display: block; font-size: 1rem; font-weight: 700; color: var(--white);
+      margin-top: 0.15rem;
+    }
+
+    /* Contact form */
+    .contact-form {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px; padding: 2.5rem;
+      backdrop-filter: blur(8px);
+    }
+    .contact-form h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.4rem; font-weight: 700; color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label {
+      display: block; font-size: 0.78rem; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      color: var(--gray); margin-bottom: 0.4rem;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 0.8rem 1rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 7px; color: var(--white);
+      font-family: 'Lato', sans-serif; font-size: 0.95rem;
+      outline: none; transition: border-color 0.2s, background 0.2s;
+    }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: #aaaaaa;
+      background: rgba(255,255,255,0.1);
+    }
+    .form-group select option { background: var(--navy); color: var(--white); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-submit {
+      width: 100%; margin-top: 0.5rem;
+      padding: 1rem; border: none; cursor: pointer;
+      background: linear-gradient(135deg, #333, #666);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.05rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; border-radius: 7px;
+      transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
+    .form-submit:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+    #form-success {
+      display: none; margin-top: 1rem;
+      padding: 1rem; background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2); border-radius: 7px;
+      color: #cccccc; font-size: 0.9rem; text-align: center;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #060e1a;
+      padding: 2rem 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer-logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem; font-weight: 800;
+      color: rgba(255,255,255,0.6);
+    }
+    .footer-logo span { color: var(--accent); }
+    .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
+    .footer-area { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .hero-content { grid-template-columns: 1fr; gap: 3rem; padding-top: 3rem; }
+      .why-inner { grid-template-columns: 1fr; }
+      .why-visual { display: none; }
+      .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .process-steps::before { display: none; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 540px) {
+      .form-row { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ── REVIEWS ── */
+    .reviews { background: var(--white); }
+    .reviews-header { text-align: center; margin-bottom: 3rem; }
+    .reviews-header .section-sub { margin: 0.75rem auto 0; }
+
+    /* Existing reviews display */
+    .reviews-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem; margin-bottom: 3.5rem;
+    }
+    .review-card {
+      background: var(--off-white);
+      border: 1px solid var(--light-gray);
+      border-radius: 14px; padding: 1.6rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .review-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.08); }
+    .review-stars { font-size: 1rem; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .review-text { font-size: 0.92rem; color: #444; line-height: 1.7; font-style: italic; margin-bottom: 1rem; }
+    .review-author { display: flex; align-items: center; gap: 0.75rem; }
+    .review-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: linear-gradient(135deg, #333, #777);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: 1rem; color: white;
+      flex-shrink: 0;
+    }
+    .review-name { font-weight: 700; font-size: 0.88rem; color: var(--navy); }
+    .review-date { font-size: 0.75rem; color: var(--gray); margin-top: 0.1rem; }
+    .no-reviews {
+      text-align: center; padding: 2.5rem;
+      background: var(--off-white); border: 2px dashed var(--light-gray);
+      border-radius: 14px; color: var(--gray);
+      font-size: 0.95rem; margin-bottom: 3.5rem;
+    }
+
+    /* Leave a review form */
+    .review-form-wrap {
+      max-width: 640px; margin: 0 auto;
+      background: var(--navy);
+      border-radius: 16px; padding: 2.5rem;
+    }
+    .review-form-wrap h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.5rem; font-weight: 800; color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+    .review-form-wrap p { font-size: 0.88rem; color: rgba(255,255,255,0.5); margin-bottom: 1.8rem; }
+    .star-picker { display: flex; gap: 0.4rem; margin-bottom: 1.2rem; }
+    .star-picker span {
+      font-size: 2rem; cursor: pointer;
+      transition: transform 0.15s; filter: grayscale(1) opacity(0.4);
+      user-select: none;
+    }
+    .star-picker span.active { filter: none; transform: scale(1.1); }
+    .review-form-group { margin-bottom: 1.1rem; }
+    .review-form-group label {
+      display: block; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: rgba(255,255,255,0.5); margin-bottom: 0.4rem;
+    }
+    .review-form-group input, .review-form-group textarea {
+      width: 100%; padding: 0.8rem 1rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 7px; color: var(--white);
+      font-family: 'Lato', sans-serif; font-size: 0.95rem;
+      outline: none; transition: border-color 0.2s;
+    }
+    .review-form-group input::placeholder,
+    .review-form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+    .review-form-group input:focus,
+    .review-form-group textarea:focus { border-color: rgba(255,255,255,0.5); }
+    .review-form-group textarea { min-height: 110px; resize: vertical; }
+    .review-submit {
+      width: 100%; padding: 1rem; border: none; cursor: pointer;
+      background: var(--white); color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.05rem; font-weight: 800; letter-spacing: 0.07em;
+      text-transform: uppercase; border-radius: 7px;
+      transition: background 0.2s, transform 0.15s;
+      margin-top: 0.5rem;
+    }
+    .review-submit:hover { background: #e0e0e0; transform: translateY(-2px); }
+    #review-success {
+      display: none; margin-top: 1rem; padding: 1rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 7px; color: #ccc;
+      font-size: 0.9rem; text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">D <span>&</span> C Driveway Cleaning</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:5044603878" class="nav-cta">Call Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">Serving Hahnville & St. Charles Parish</div>
+      <h1>Spotless Driveways.<br /><em>Every Time.</em></h1>
+      <p class="hero-sub">Professional pressure washing services in Hahnville, Louisiana. We blast away years of grime, mold, and stains — leaving your surfaces looking brand new.</p>
+      <div class="hero-actions">
+        <a href="tel:5044603878" class="btn-primary">📞 Call for a Free Quote</a>
+        <a href="#services" class="btn-secondary">Our Services ↓</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-title">Why Locals Trust Us</div>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Satisfaction</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Quick<span>.</span></div>
+          <div class="stat-label">Easy Setup</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Fast<span>.</span></div>
+          <div class="stat-label">Turnaround</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Free<span>.</span></div>
+          <div class="stat-label">Estimates</div>
+        </div>
+      </div>
+      <div class="hero-promise">
+        <span class="hero-promise-icon">🛡️</span>
+        <p class="hero-promise-text"><strong>No job too big or small.</strong> Residential driveways, patios, and decks — we handle it all with care.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Professional pressure washing with commercial-grade equipment. Call us for a free, no-obligation quote.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-img driveway">
+          <span>🚗</span>
+          <div class="service-stripe"></div>
+        </div>
+        <div class="service-body">
+          <h3>Driveway Cleaning</h3>
+          <p>Say goodbye to oil stains, dirt, mold, and mildew. We restore your driveway to its original, clean appearance using high-pressure washing techniques.</p>
+          <ul class="service-features">
+            <li>Concrete & asphalt driveways</li>
+            <li>Oil & rust stain removal</li>
+            <li>Mold, mildew & algae treatment</li>
+            <li>Fast, same-week scheduling</li>
+          </ul>
+          <a href="tel:5044603878" class="service-cta">Get a Free Quote →</a>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-img deck">
+          <span>🪵</span>
+          <div class="service-stripe"></div>
+        </div>
+        <div class="service-body">
+          <h3>Deck & Patio Cleaning</h3>
+          <p>Revitalize your outdoor living space. We safely remove years of built-up grime, algae, and weathering from wood, composite, and concrete surfaces.</p>
+          <ul class="service-features">
+            <li>Wood & composite decks</li>
+            <li>Concrete & brick patios</li>
+            <li>Safe low-pressure options</li>
+            <li>Pre-stain & seal prep</li>
+          </ul>
+          <a href="tel:5044603878" class="service-cta">Get a Free Quote →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="why-inner">
+      <div>
+        <span class="section-label reveal">Why Choose Us</span>
+        <h2 class="section-title reveal">Local, Reliable &amp; Professional</h2>
+        <p class="section-sub reveal">We're your neighbors in Hahnville — and we take pride in making every property shine.</p>
+        <div class="why-features">
+          <div class="why-feature reveal">
+            <div class="why-icon">📍</div>
+            <div>
+              <h4>Locally Owned & Operated</h4>
+              <p>We live and work right here in St. Charles Parish. We know the Louisiana climate and what it takes to keep surfaces clean in our humid conditions.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal">
+            <div class="why-icon">⚡</div>
+            <div>
+              <h4>Commercial-Grade Equipment</h4>
+              <p>We use professional pressure washing equipment to get the job done right the first time — with results that last.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal">
+            <div class="why-icon">💲</div>
+            <div>
+              <h4>Free, No-Hassle Estimates</h4>
+              <p>No pressure, no hidden fees. Call or email us for a straightforward quote tailored to your property.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal">
+            <div class="why-icon">✅</div>
+            <div>
+              <h4>Satisfaction Guaranteed</h4>
+              <p>We don't call a job done until you're happy with the results. Your satisfaction is our top priority on every single project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual reveal">
+        <div class="why-visual-inner">
+          <span class="why-visual-icon">💧</span>
+          <h3>D & C Driveway Cleaning</h3>
+          <p>Serving Hahnville and the greater St. Charles Parish area with pride. Call us today and see the difference a professional clean makes.</p>
+          <div class="why-visual-badge">📞 504-460-3878</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <span class="section-label">How It Works</span>
+      <h2 class="section-title">Simple as 1, 2, 3</h2>
+      <p class="section-sub">Getting your property cleaned is easy. Here's what to expect when you call D & C.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">1</div>
+        <h4>Call or Email Us</h4>
+        <p>Reach out by phone at 504-460-3878 or send us an email. We'll ask a few quick questions about your property.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">2</div>
+        <h4>Get a Free Quote</h4>
+        <p>We'll give you a fair, upfront price — no surprises. Schedule at a time that works for you.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">3</div>
+        <h4>We Do the Work</h4>
+        <p>Our team shows up on time and gets to work. We clean up after ourselves and leave your property spotless.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">4</div>
+        <h4>Enjoy the Results</h4>
+        <p>Step back and admire the difference. Your driveway or deck will look like new — guaranteed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-header reveal">
+      <span class="section-label">Customer Reviews</span>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub">Real feedback from real neighbors in Hahnville and St. Charles Parish.</p>
+    </div>
+
+    <!-- Existing reviews show up here -->
+    <div id="reviews-list" class="reviews-grid"></div>
+    <div id="no-reviews" class="no-reviews" style="display:none;">
+      ⭐ No reviews yet — be the first to leave one below!
+    </div>
+
+    <!-- Leave a review form -->
+    <div class="review-form-wrap reveal">
+      <h3>Leave a Review</h3>
+      <p>Had a great experience? Let others in the community know!</p>
+      <div class="star-picker" id="star-picker">
+        <span data-val="1">⭐</span>
+        <span data-val="2">⭐</span>
+        <span data-val="3">⭐</span>
+        <span data-val="4">⭐</span>
+        <span data-val="5">⭐</span>
+      </div>
+      <div class="review-form-group">
+        <label>Your Name</label>
+        <input type="text" id="review-name" placeholder="Jane D." />
+      </div>
+      <div class="review-form-group">
+        <label>Your Review</label>
+        <textarea id="review-text" placeholder="Tell us about your experience with D & C Driveway Cleaning..."></textarea>
+      </div>
+      <button class="review-submit" onclick="submitReview()">Submit Review →</button>
+      <div id="review-success">✅ Thanks for your review! It means the world to us.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div>
+        <h2>Ready for a <em>Spotless</em> Property?</h2>
+        <p class="contact-sub">Contact us today for a free estimate. No job is too big or too small — we're ready to help you in Hahnville and surrounding areas.</p>
+        <div class="contact-methods">
+          <a href="tel:5044603878" class="contact-method">
+            <div class="contact-method-icon">📞</div>
+            <div class="contact-method-info">
+              <label>Call Us Directly</label>
+              <span>504-460-3878</span>
+            </div>
+          </a>
+          <a href="mailto:Christopher.ray.wilkinson@gmail.com" class="contact-method">
+            <div class="contact-method-icon">✉️</div>
+            <div class="contact-method-info">
+              <label>Send an Email</label>
+              <span>Christopher.ray.wilkinson@gmail.com</span>
+            </div>
+          </a>
+          <div class="contact-method" style="cursor:default;">
+            <div class="contact-method-icon">📍</div>
+            <div class="contact-method-info">
+              <label>Service Area</label>
+              <span>Hahnville, LA & St. Charles Parish</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3>Request a Free Quote</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" id="fname" placeholder="John" />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" id="lname" placeholder="Smith" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="phone" placeholder="(504) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label>Service Needed</label>
+          <select id="service">
+            <option value="">Select a service...</option>
+            <option>Driveway Cleaning</option>
+            <option>Deck / Patio Cleaning</option>
+            <option>Both</option>
+            <option>Not Sure — Need Advice</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Additional Details (Optional)</label>
+          <textarea id="details" placeholder="Tell us about your property, size, or any special concerns..."></textarea>
+        </div>
+        <button class="form-submit" onclick="handleSubmit()">Send Quote Request →</button>
+        <div id="form-success">✅ Thanks! We'll be in touch within 24 hours.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">D <span>&</span> C Driveway Cleaning</div>
+  <div class="footer-area">📍 Hahnville, Louisiana</div>
+  <div class="footer-copy">© 2025 D & C Driveway Cleaning. All rights reserved.</div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Form submit
+  function handleSubmit() {
+    const fname = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const service = document.getElementById('service').value;
+    if (!fname || !phone || !service) {
+      alert('Please fill in your name, phone number, and service type.');
+      return;
+    }
+    document.getElementById('form-success').style.display = 'block';
+    // In a real site, this would send form data to a backend or email service
+  }
+
+  // ── REVIEWS ──
+  let selectedStars = 0;
+  const reviews = JSON.parse(localStorage.getItem('dc_reviews') || '[]');
+
+  function renderReviews() {
+    const list = document.getElementById('reviews-list');
+    const empty = document.getElementById('no-reviews');
+    if (reviews.length === 0) {
+      list.style.display = 'none';
+      empty.style.display = 'block';
+      return;
+    }
+    list.style.display = 'grid';
+    empty.style.display = 'none';
+    list.innerHTML = reviews.map(r => `
+      <div class="review-card">
+        <div class="review-stars">${'⭐'.repeat(r.stars)}</div>
+        <p class="review-text">"${r.text}"</p>
+        <div class="review-author">
+          <div class="review-avatar">${r.name.charAt(0).toUpperCase()}</div>
+          <div>
+            <div class="review-name">${r.name}</div>
+            <div class="review-date">${r.date}</div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // Star picker
+  const stars = document.querySelectorAll('#star-picker span');
+  stars.forEach(star => {
+    star.addEventListener('click', () => {
+      selectedStars = parseInt(star.dataset.val);
+      stars.forEach((s, i) => s.classList.toggle('active', i < selectedStars));
+    });
+    star.addEventListener('mouseover', () => {
+      const val = parseInt(star.dataset.val);
+      stars.forEach((s, i) => s.classList.toggle('active', i < val));
+    });
+    star.addEventListener('mouseout', () => {
+      stars.forEach((s, i) => s.classList.toggle('active', i < selectedStars));
+    });
+  });
+
+  function submitReview() {
+    const name = document.getElementById('review-name').value.trim();
+    const text = document.getElementById('review-text').value.trim();
+    if (!name || !text || selectedStars === 0) {
+      alert('Please enter your name, select a star rating, and write a review.');
+      return;
+    }
+    const now = new Date();
+    const date = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    reviews.unshift({ name, text, stars: selectedStars, date });
+    localStorage.setItem('dc_reviews', JSON.stringify(reviews));
+    renderReviews();
+    document.getElementById('review-name').value = '';
+    document.getElementById('review-text').value = '';
+    selectedStars = 0;
+    stars.forEach(s => s.classList.remove('active'));
+    document.getElementById('review-success').style.display = 'block';
+    setTimeout(() => document.getElementById('review-success').style.display = 'none', 4000);
+  }
+
+  renderReviews();
+</script>
+</body>
+</html>
